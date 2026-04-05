@@ -1,0 +1,77 @@
+.loading-dots-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px;
+}
+
+.loading-dots-container.compact {
+  padding: 0;
+  gap: 0;
+  flex-direction: row;
+}
+
+.loading-dots-container.compact .dots-wrapper {
+  gap: 6px;
+}
+
+.loading-dots-container.compact .dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background: white;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  animation: bounceSmall 1.2s ease-in-out infinite;
+}
+
+@keyframes bounceSmall {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-4px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+.dots-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3), 0 0 15px rgba(168, 85, 247, 0.2);
+  animation: bounceScale 1.2s ease-in-out infinite;
+}
+
+.dot-1 { animation-delay: 0s; }
+.dot-2 { animation-delay: 0.15s; }
+.dot-3 { animation-delay: 0.3s; }
+.dot-4 { animation-delay: 0.45s; }
+
+@keyframes bounceScale {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-15px) scale(1.2);
+    opacity: 1;
+    filter: brightness(1.1);
+  }
+}
+
+.loading-message {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}

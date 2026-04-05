@@ -1,0 +1,24 @@
+.page {
+  padding: 40px;
+  background: #f9f9f9;
+  min-height: 100vh;
+  /* start hidden for transition */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.page h1 {
+  margin-bottom: 30px;
+}
+
+.page p {
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

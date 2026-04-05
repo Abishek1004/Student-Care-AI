@@ -1,0 +1,179 @@
+.main-footer {
+  background-color: #0f172a; /* Deep charcoal/navy */
+  color: #e2e8f0;
+  padding: 80px 0 40px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.col-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col-links li {
+  margin-bottom: 12px;
+}
+
+.col-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.col-links a:hover {
+  color: #fb7185; /* Soft pink/rose */
+  transform: translateX(4px);
+}
+
+/* Connect Social Icons */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #94a3b8;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+  background: #fb7185;
+  color: white;
+  border-color: #fb7185;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(251, 113, 133, 0.3);
+}
+
+/* Newsletter Box */
+.newsletter-box p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.input-group-tiny {
+  display: flex;
+  gap: 8px;
+}
+
+.input-group-tiny input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  flex: 1;
+  outline: none;
+}
+
+.input-group-tiny button {
+  background: #fb7185;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  transition: opacity 0.2s;
+}
+
+.input-group-tiny button:hover {
+  opacity: 0.9;
+}
+
+/* Footer Bottom Layout */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 30px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.small-brain-icon {
+  color: #fb7185; /* Pink brain logo */
+  filter: drop-shadow(0 0 8px rgba(251, 113, 133, 0.4));
+}
+
+.footer-brand-name {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #475569;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .bottom-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
